@@ -1,6 +1,6 @@
 # chill_zone
 
-A new Flutter project.
+A new Flutter project. Working on UIs..
 
 ## Getting Started
 
