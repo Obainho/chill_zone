@@ -111,10 +111,11 @@ class _StatusPageState extends State<StatusPage> {
 
 class StatusTiles extends StatelessWidget {
   const StatusTiles({
+    Key? key,
     required this.image,
     required this.text,
     required this.text2,
-  });
+  }) : super(key: key);
   final String image;
   final String text;
   final String text2;

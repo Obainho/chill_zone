@@ -156,12 +156,14 @@ class _CallPageState extends State<CallPage> {
 }
 
 class CallTiles extends StatelessWidget {
-  const CallTiles(
-      {required this.image,
-      required this.text,
-      required this.subtitleIcon,
-      required this.text2,
-      required this.trailingIcon});
+  const CallTiles({
+    Key? key,
+    required this.image,
+    required this.text,
+    required this.subtitleIcon,
+    required this.text2,
+    required this.trailingIcon,
+  }) : super(key: key);
   final String image;
   final String text;
   final bool subtitleIcon;

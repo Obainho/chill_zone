@@ -154,12 +154,14 @@ class _ChatPageState extends State<ChatPage> {
 }
 
 class ChatTiles extends StatelessWidget {
-  const ChatTiles(
-      {required this.image,
-      required this.text,
-      required this.subtitleIcon,
-      required this.text2,
-      required this.text3});
+  const ChatTiles({
+    Key? key,
+    required this.image,
+    required this.text,
+    required this.subtitleIcon,
+    required this.text2,
+    required this.text3,
+  }) : super(key: key);
   final String image;
   final String text;
   final bool subtitleIcon;

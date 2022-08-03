@@ -14,6 +14,13 @@ class MyDemoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MainPage();
+    return const MaterialApp(
+      home: DefaultTabController(
+        // Widget that makes TabBar to work
+        length: 4, // sets the number of items in the TabBar
+        initialIndex: 1, 
+        child: MainPage(),
+      ),
+    );
   }
 }
